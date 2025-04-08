@@ -3,6 +3,8 @@ import torch
 import scipy
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
+st.set_page_config('Sentiment-Analysis', layout="centered")
+
 # Set up the app title and description
 st.title("FinBERT Financial Sentiment Analysis")
 st.write("""This app uses the FinBERT model to analyze sentiment in financial text.""")
