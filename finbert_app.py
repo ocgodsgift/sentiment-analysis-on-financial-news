@@ -16,13 +16,17 @@ st.write("""
     """)
 
 # Load the model and tokenizer
-@st.cache_resource
+@st.cache_resource(show_spinner=False)  # Added show_spinner=False
 def load_model():
     tokenizer = AutoTokenizer.from_pretrained("ProsusAI/finbert")
     model = AutoModelForSequenceClassification.from_pretrained("ProsusAI/finbert")
     return tokenizer, model
 
-tokenizer, model = load_model()
+try:
+    tokenizer, model = load_model()
+except Exception as e:
+    st.error(f"Failed to load model: {str(e)}")
+    st.stop()
 
 # Function to predict sentiment
 def predict_sentiment(text):
