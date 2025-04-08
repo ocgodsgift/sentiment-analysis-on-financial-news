@@ -1,0 +1,10 @@
+pandas
+seaborn
+scikit-learn
+nltk
+xgboost
+torch
+scipy
+transformers
+hf_xet
+streamlit

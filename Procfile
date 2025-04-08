@@ -1,0 +1,1 @@
+web: streamlit run finbert_app.py
