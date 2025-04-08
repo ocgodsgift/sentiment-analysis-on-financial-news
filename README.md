@@ -54,7 +54,7 @@ Evaluation Metrics:
 - Confusion Matrix: Provides insights into model misclassifications.
 - Classification Report: Shows precision, recall, and F1-score for each sentiment class.
 
-- ### FinBERT Deep Dive
+### FinBERT Deep Dive
 What is FinBERT?
 
 FinBERT is a deep learning model specifically designed for financial text analysis. It is built on BERT (Bidirectional Encoder Representations from Transformers) and fine-tuned on financial news data to improve sentiment classification.
