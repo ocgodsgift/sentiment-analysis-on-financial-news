@@ -88,6 +88,9 @@ Potential Applications:
 - FinBERT provided better performance due to its financial text specialization.
 - Future work includes fine-tuning and deploying the model for real-world applications.
 
+### Test App:
+https://sentiment-analysis-on-financial-news.streamlit.app/
+
 
 
 
